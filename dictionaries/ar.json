@@ -1,1 +1,316 @@
-{}
+{
+  "home": {
+    "section1": {
+      "title": "سوق كامي",
+      "content": "متجرك الشامل لجميع أشياء كامي",
+      "button": "تسوق الآن"
+    },
+    "section2": {
+      "title": "منتجاتنا",
+      "content1": "نشحن لجميع أنحاء العالم",
+      "content2": "الدفع ممكن بعد الشحن",
+      "button": "تسوق الآن",
+      "product1": {
+        "Name": "أدوات المطبخ"
+      },
+      "product2": {
+        "Name": "الملابس"
+      },
+      "product3": {
+        "Name": "فساتين الفتيات"
+      },
+      "product4": {
+        "Name": "ملاءات السرير"
+      },
+      "product5": {
+        "Name": "منتجات أخرى"
+      }
+    },
+    "section3": {
+      "title": "سوق كامي",
+      "content": "متجرك الشامل لجميع أشياء كامي",
+      "button": "تسوق الآن"
+    },
+    "section4": {
+      "title": "سوق كامي",
+      "content": "متجرك الشامل لجميع أشياء كامي",
+      "button": "تسوق الآن"
+    }
+  },
+  "market": {
+    "item": {
+      "was": "كان",
+      "quantity": "كمية",
+      "addTocart": "أضف إلى السلة",
+      "price": "السعر",
+      "description": "الوصف",
+      "deliveryOptions": "خيارات التوصيل",
+      "perKg": "لكل كيلو",
+      "minOrder": "الحد الأدنى للطلب",
+      "noDeliveryDestination": "لا توجد وجهة تسليم",
+      "paymentOptions": "خيارات الدفع",
+      "paymentAfterDelivery": "الدفع بعد التسليم",
+      "similarItems": "العناصر المماثلة",
+      "noSimilarItems": "لا توجد عناصر مماثلة",
+      "bought": "تم شراؤه",
+      "qty": "الكمية"
+    }
+  },
+
+  "itemCard": {
+    "reduction": "خصم",
+    "outOfStock": "إنتهى من المخزن"
+  },
+
+  "paySummarry": {
+    "details": "التفاصيل",
+    "viewDetails": "عرض التفاصيل",
+    "tableCaption": "ملخص الطلب بما في ذلك الشحن",
+    "subtotal": "المجموع الفرعي",
+    "discount": "الخصم",
+    "shipping": "الشحن",
+    "contactUs": "اتصل بنا",
+    "total": "المجموع",
+    "CountryOfDelivery": "بلد التوصيل",
+    "ContinueToPayment": "المتابعة للدفع"
+  },
+  "CartPage": {
+    "cart": "السلة",
+    "item": "العنصر",
+    "price": "السعر",
+    "quantity": "الكمية",
+    "total": "المجموع",
+    "remove": "إزالة",
+    "continueShopping": "متابعة التسوق",
+    "checkout": "الدفع",
+    "emptyCart": "السلة فارغة",
+    "emptyCartContent": "يبدو أنك لم تقم بإضافة أي عناصر إلى سلة التسوق الخاصة بك بعد.",
+    "emptyCartButton": "متابعة التسوق"
+  },
+  "payPage": {
+    "tableCaption": "ملخص الطلب بما في ذلك الشحن",
+    "subtotal": "المجموع الفرعي",
+    "discount": "الخصم",
+    "shipping": "الشحن",
+    "contactUs": "اتصل بنا",
+    "total": "المجموع",
+    "countryOfDelivery": "بلد التوصيل",
+    "PaymentMethod": "طريقة الدفع",
+    "deliveryDetails": "تفاصيل التوصيل",
+    "fullName": "الاسم الكامل (الاسم واللقب - إلزامي)",
+    "fullNameLabel": "الاسم الكامل",
+    "street": "الشارع",
+    "city": "المدينة (إلزامي)",
+    "cityLabel": "المدينة",
+    "zipCode": "الرمز البريدي",
+    "phone": "الهاتف (إلزامي)",
+    "phoneLabel": "الهاتف",
+    "state": "الولاية",
+    "country": "البلد (إلزامي)",
+    "countryLabel": "البلد",
+    "orderNow": "أطلب الآن",
+    "payNow": "ادفع الآن",
+    "textYourOrder": "طلبك",
+    "textOrderSuccess": " تم إرساله بنجاح. يرجى التحقق من حفظ رقم الطلب الخاص بك للتتبع.",
+    "textOrderError": "حدث خطأ أثناء الطلب. يرجى المحاولة مرة أخرى في وقت لاحق.",
+    "willContact": "سنتصل بك لتأكيد طلبك وتفاصيل الدفع.",
+    "canContactWhatsApp": "يمكنك أيضًا الاتصال بنا عبر WhatsApp",
+    "canContactButton": "اتصل بنا",
+    "getReceiptText": "هل ترغب في الحصول على إيصال لطلبك؟",
+    "getReceiptButton": "احصل على الإيصال",
+    "email": "البريد الإلكتروني",
+    "viewOrder": "عرض الطلب",
+    "close": "إغلاق"
+  },
+
+  "orderCard": {
+    "NumberItemsBought": "عدد العناصر المشتراة"
+  },
+
+  "generics": {
+    "noItemsFound": "لم يتم العثور على أي عناصر",
+    "noItemsFoundContent": "لم يتم العثور على أي عناصر لهذه الفئة",
+    "noItemsFoundButton": "العودة إلى الصفحة الرئيسية",
+    "errorLoadingItems": "حدث خطأ أثناء تحميل العناصر"
+  },
+
+  "orderDatils": {
+    "orderDetails": "تفاصيل الطلب",
+    "orderNumber": "رقم الطلب",
+    "status": "الحالة",
+    "phone": "رقم الهاتف",
+    "totalAmount": "المبلغ الإجمالي",
+    "caption1": "الطلب",
+    "deliveryAddress": "عنوان التوصيل",
+    "fullName": "الاسم الكامل",
+    "street": "الشارع",
+    "city": "المدينة",
+    "state": "الولاية",
+    "zipCode": "الرمز البريدي",
+    "caption2": "عنوان",
+    "itemsBought": "العناصر المشتراة",
+    "item": "العنصر",
+    "price": "السعر",
+    "quantity": "الكمية",
+    "articles": "المقالات",
+    "address": "العنوان"
+  },
+
+  "shopCard": {
+    "priceSingle": "السعر الفردي",
+    "discount": "خصم",
+    "qteMinimum": "الحد الأدنى للكمية",
+    "insufficientQuantity": "الكمية غير كافية",
+    "delete": "حذف"
+  },
+  "signUpPage": {
+    "firstName": "الاسم الأول",
+    "lastName": "الاسم الأخير",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "phone": "الهاتف",
+    "selectCountry": "اختر البلد",
+    "signUp": "سجل",
+    "alreadyHaveAccount": "هل لديك حساب؟",
+    "login": "تسجيل الدخول",
+    "passwordNotMatch": "كلمات المرور غير متطابقة",
+    "passwordLength": "يجب أن تحتوي كلمة المرور على 6 أحرف على الأقل",
+    "invalidEmail": "بريد إلكتروني غير صالح",
+    "phoneLength": "يجب أن يحتوي رقم الهاتف على 8 أحرف على الأقل",
+    "phoneNotNumber": "يجب أن يكون رقم الهاتف رقمًا",
+    "emptyField": "لا يمكن ترك هذا الحقل فارغًا",
+    "errorSignUp": "حدث خطأ أثناء التسجيل. يرجى المحاولة مرة أخرى في وقت لاحق."
+  },
+  "loginPage": {
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "login": "تسجيل الدخول",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "noAccount": "ليس لديك حساب؟",
+    "signUp": "سجل",
+    "errorLogin": "حدث خطأ أثناء تسجيل الدخول. يرجى المحاولة مرة أخرى في وقت لاحق."
+  },
+  "accountPage": {
+    "account": "الحساب",
+    "personalInfo": "المعلومات الشخصية",
+    "firstName": "الاسم الأول",
+    "lastName": "الاسم الأخير",
+    "email": "البريد الإلكتروني",
+    "phone": "الهاتف",
+    "address": "العنوان",
+    "street": "الشارع",
+    "city": "المدينة",
+    "state": "الولاية/المقاطعة/الإقليم",
+    "zipCode": "الرمز البريدي",
+    "country": "البلد",
+    "save": "حفظ",
+    "changePassword": "تغيير كلمة المرور",
+    "oldPassword": "كلمة المرور القديمة",
+    "newPassword": "كلمة المرور الجديدة",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "savePassword": "حفظ كلمة المرور",
+    "errorUpdate": "حدث خطأ أثناء تحديث المعلومات. يرجى المحاولة مرة أخرى في وقت لاحق.",
+    "errorUpdatePassword": "حدث خطأ أثناء تحديث كلمة المرور. يرجى المحاولة مرة أخرى في وقت لاحق.",
+    "cancel": "إلغاء",
+    "Modify": "تعديل"
+  },
+  "toast": {
+    "addedToCart": "أضيف إلى السلة",
+    "removedFromCart": "تمت إزالته من السلة",
+    "errorAddToCart": "حدث خطأ أثناء الإضافة إلى السلة",
+    "errorRemoveFromCart": "حدث خطأ أثناء الإزالة من السلة",
+    "errorQuantity": "الكمية غير كافية",
+    "errorUpdateCart": "حدث خطأ أثناء تحديث السلة",
+    "errorOrder": "حدث خطأ أثناء الطلب",
+    "errorSignUp": "حدث خطأ أثناء التسجيل",
+    "errorLogin": "حدث خطأ أثناء تسجيل الدخول",
+    "successUpdate": "تم تحديث المعلومات بنجاح",
+    "successUpdatePassword": "تم تحديث كلمة المرور بنجاح",
+    "successOrder": "تم طلب بنجاح",
+    "successSignUp": "تم التسجيل بنجاح",
+    "successLogin": "تم تسجيل الدخول بنجاح",
+    "successLogout": "تم تسجيل الخروج بنجاح",
+    "errorLogout": "حدث خطأ أثناء تسجيل الخروج",
+    "CurrencyChanged": "تم تغيير العملة",
+    "errorCurrencyChanged": "حدث خطأ أثناء تغيير العملة",
+    "operationFailed": "فشلت العملية",
+    "operationSuccess": "نجاح العملية",
+    "error": "خطأ"
+  },
+
+  "footer": {
+    "contactUs": "اتصل بنا",
+    "aboutUs": "معلومات عنا",
+    "terms": "الشروط والأحكام",
+    "privacy": "سياسة الخصوصية",
+    "rights": "جميع الحقوق محفوظة"
+  },
+  "modal": {
+    "close": "إغلاق"
+  },
+  "others": {
+    "currency": "العملة",
+    "language": "اللغة",
+    "logout": "تسجيل الخروج",
+    "profile": "الملف الشخصي",
+    "cart": "السلة",
+    "home": "الرئيسية",
+    "market": "السوق",
+    "order": "الطلب",
+    "login": "تسجيل الدخول",
+    "signup": "التسجيل",
+    "search": "بحث",
+    "searchPlaceholder": "البحث عن منتجات",
+    "settings": "الإعدادات",
+    "darkMode": "الوضع الداكن",
+    "lightMode": "الوضع الفاتح",
+    "add": "إضافة",
+    "remove": "إزالة",
+    "total": "المجموع",
+    "continue": "متابعة",
+    "checkout": "الدفع",
+    "emptyCart": "السلة فارغة",
+    "emptyCartContent": "يبدو أنك لم تقم بإضافة أي عناصر إلى سلة التسوق الخاصة بك بعد.",
+    "emptyCartButton": "متابعة التسوق",
+    "articles": "المقالات",
+    "address": "العنوان",
+    "orderDetails": "تفاصيل الطلب",
+    "orderNumber": "رقم الطلب",
+    "status": "الحالة",
+    "phone": "رقم الهاتف",
+    "totalAmount": "المبلغ الإجمالي",
+    "caption1": "الطلب",
+    "deliveryAddress": "عنوان التوصيل",
+    "fullName": "الاسم الكامل",
+    "street": "الشارع",
+    "city": "المدينة",
+    "state": "الولاية/المقاطعة/الإقليم",
+    "zipCode": "الرمز البريدي",
+    "caption2": "عنوان",
+    "itemsBought": "العناصر المشتراة",
+    "item": "العنصر",
+    "price": "السعر",
+    "quantity": "الكمية",
+    "sendEmail": "إرسال بريد إلكتروني",
+    "resetPasswordEmail": "إعادة تعيين كلمة المرور",
+    "useAccoutnAddress": "استخدم عنوان الحساب",
+    "recentlyAdded": "تمت إضافته مؤخرًا"
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "market": "السوق",
+    "order": "الطلب",
+    "login": "تسجيل الدخول",
+    "signup": "التسجيل",
+    "profile": "الملف الشخصي",
+    "logout": "تسجيل الخروج",
+    "verifyOrder": "تحقق من الطلب",
+    "search": "بحث",
+    "cart": "السلة",
+    "myOrders": "طلباتي",
+    "maBoutique": "متجري",
+    "addProduct": "إضافة منتج",
+    "myProducts": "منتجاتي"
+  }
+}

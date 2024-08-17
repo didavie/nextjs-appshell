@@ -1,5 +1,5 @@
 import { base } from "./base";
-import { userApi } from "../../app/[lang]/user/api/api";
+import { userApi } from "@/components/api/user";
 
 export default {
   base,

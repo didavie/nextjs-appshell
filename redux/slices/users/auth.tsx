@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
-import api from "../../api";
-import { User } from "../../../types/interfaces";
-import type { RootState } from "../../store/store";
+import api from "@/redux/api";
+import { User } from "@/types/interfaces";
+import type { RootState } from "@/redux/store/store";
 import { SigninCheckResult } from "reactfire";
 import { IdTokenResult } from "firebase/auth";
 

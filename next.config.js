@@ -1,9 +1,12 @@
 /** @type {import('next').NextConfig} */
+const removeImports = require("next-remove-imports")();
+
 const nextConfig = {
   pageExtensions: ["js", "jsx", "ts", "tsx", "mdx"],
   experimental: {
     mdxRs: true,
   },
+  
 };
 
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
@@ -11,4 +14,4 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 });
 
 const withMDX = require("@next/mdx")();
-module.exports = withBundleAnalyzer(withMDX(nextConfig));
+module.exports = withBundleAnalyzer(withMDX(removeImports(nextConfig)));

@@ -5,6 +5,8 @@ import usersSlice from "../slices/users/users";
 // import { setupListeners } from "@reduxjs/toolkit/dist/query";
 import slice from "../slices";
 import usersReducer from "../reducers/user";
+import postReducer from "../reducers/post";
+import ui from "../reducers/ui";
 
 export const store = configureStore({
   reducer: {
@@ -13,6 +15,8 @@ export const store = configureStore({
     auth: slice.users.auth,
     user: usersReducer,
     [api.base.reducerPath]: api.base.reducer,
+    post: postReducer,
+    ui: ui,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(api.base.middleware),

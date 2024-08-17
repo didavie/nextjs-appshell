@@ -1,7 +1,7 @@
 "use client";
 import { FirebaseAppProvider } from "reactfire";
 import React from "react";
-import Provider from "./Provider";
+import Provider from "@/firebase/Provider";
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -14,7 +14,7 @@ const firebaseConfig = {
   measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
-export default function FirebaseApp({ children }: React.PropsWithChildren<{}>) {
+export default function FirebaseConfig({ children }: React.PropsWithChildren<{}>) {
   return (
     <FirebaseAppProvider firebaseConfig={firebaseConfig}>
       <Provider>{children}</Provider>

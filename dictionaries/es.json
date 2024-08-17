@@ -1,1 +1,321 @@
-{}
+{
+  "home": {
+    "section1": {
+      "title": "Mercado de Cami Market
+",
+      "content": "Su tienda de una parada para todo lo relacionado con Cami Market",
+      "button": "Compra ahora"
+    },
+    "section2": {
+      "title": "Nuestros productos",
+      "content1": "Enviamos a todo el mundo",
+      "content2": "Pago posible después del envío",
+      "button": "Compra ahora",
+      "product1": {
+        "Name": "Artículos de cocina"
+      },
+      "product2": {
+        "Name": "Telas Chiganvy"
+      },
+      "product3": {
+        "Name": "Vestidos de niñas"
+      },
+      "product4": {
+        "Name": "Ropa de cama"
+      },
+      "product5": {
+        "Name": "Otros productos"
+      }
+    },
+    "section3": {
+      "title": "Mercado de Cami Market",
+      "content": "Su tienda de una parada para todo lo relacionado con Cami Market",
+      "button": "Compra ahora"
+    },
+    "section4": {
+      "title": "Mercado de Cami Market",
+      "content": "Su tienda de una parada para todo lo relacionado con Cami Market",
+      "button": "Compra ahora"
+    }
+  },
+  "market": {
+    "item": {
+      "was": "Era",
+      "quantity": "Cantidad",
+      "addTocart": "Añadir al carrito",
+      "price": "Precio",
+      "description": "Descripción",
+      "deliveryOptions": "Opciones de entrega",
+      "perKg": "Por Kg",
+      "minOrder": "Pedido mínimo",
+      "noDeliveryDestination": "Sin destino de entrega",
+      "paymentOptions": "Opciones de pago",
+      "paymentAfterDelivery": "Pago después de la entrega",
+      "similarItems": "Artículos similares",
+      "noSimilarItems": "No hay artículos similares",
+      "bought": "Comprado",
+      "qty": "Cantidad"
+    }
+  },
+
+  "itemCard": {
+    "reduction": "de descuento",
+    "outOfStock": "Agotado"
+  },
+
+  "paySummarry": {
+    "details": "Detalles",
+    "viewDetails": "Ver detalles",
+    "tableCaption": "Resumen del pedido incluido el envío",
+    "subtotal": "Subtotal",
+    "discount": "Descuento",
+    "shipping": "Envío",
+    "contactUs": "Contáctenos",
+    "total": "Total",
+    "CountryOfDelivery": "País de entrega",
+    "ContinueToPayment": "Continuar con el pago"
+  },
+  "CartPage": {
+    "cart": "Carrito",
+    "item": "Artículo",
+    "price": "Precio",
+    "quantity": "Cantidad",
+    "total": "Total",
+    "remove": "Eliminar",
+    "continueShopping": "Continuar comprando",
+    "checkout": "Revisa",
+    "emptyCart": "Tu carrito está vacío",
+    "emptyCartContent": "Parece que aún no has agregado ningún artículo a tu carrito.",
+    "emptyCartButton": "Continuar comprando"
+  },
+
+  "payPage": {
+    "tableCaption": "Resumen del pedido incluido el envío",
+    "subtotal": "Subtotal",
+    "discount": "Descuento",
+    "shipping": "Envío",
+    "contactUs": "Contáctenos",
+    "total": "Total",
+    "countryOfDelivery": "País de entrega",
+    "PaymentMethod": "Método de pago",
+    "deliveryDetails": "Detalles de entrega",
+    "fullName": "Nombre completo (Nombre y apellido - Obligatorio)",
+    "fullNameLabel": "Nombre completo",
+    "street": "Calle",
+    "city": "Ciudad (Obligatorio)",
+    "cityLabel": "Ciudad",
+    "zipCode": "Código postal",
+    "phone": "Teléfono (Obligatorio)",
+    "phoneLabel": "Teléfono",
+    "state": "Estado",
+    "country": "País (Obligatorio)",
+    "countryLabel": "País",
+    "orderNow": "Ordenar ahora",
+    "payNow": "Pagar ahora",
+    "textYourOrder": "Tu pedido",
+    "textOrderSuccess": " se ha enviado correctamente. Por favor, asegúrese de guardar su número de pedido para el seguimiento.",
+    "textOrderError": "Se produjo un error al realizar el pedido. Por favor, inténtelo de nuevo más tarde.",
+    "willContact": "Nos pondremos en contacto con usted para confirmar su pedido y los detalles del pago.",
+    "canContactWhatsApp": "También puede contactarnos a través de WhatsApp",
+    "canContactButton": "Contáctenos",
+    "getReceiptText": "¿Desea recibir un recibo por su pedido?",
+    "getReceiptButton": "Recibir recibo",
+    "email": "Email",
+    "viewOrder": "Ver pedido",
+    "close": "Cerrar"
+  },
+
+  "orderCard": {
+    "NumberItemsBought": "Número de artículos comprados"
+  },
+
+  "generics": {
+    "noItemsFound": "No se encontraron artículos",
+    "noItemsFoundContent": "No se encontraron artículos para esta categoría",
+    "noItemsFoundButton": "Volver a la página de inicio",
+    "errorLoadingItems": "Error al cargar los artículos"
+  },
+
+  "orderDatils": {
+    "orderDetails": "Detalles del pedido",
+    "orderNumber": "Número de pedido",
+    "status": "Estado",
+    "phone": "Número de teléfono",
+    "totalAmount": "Monto total",
+    "caption1": "Pedido",
+    "deliveryAddress": "Dirección de entrega",
+    "fullName": "Nombre completo",
+    "street": "Calle",
+    "city": "Ciudad",
+    "state": "Estado",
+    "zipCode": "Código postal",
+    "caption2": "Dirección de",
+    "itemsBought": "Artículos comprados",
+    "item": "Artículo",
+    "price": "Precio",
+    "quantity": "Cantidad",
+    "articles": "Artículos",
+    "address": "Dirección"
+  },
+
+  "shopCard": {
+    "priceSingle": "Precio unitario",
+    "discount": "de descuento",
+    "qteMinimum": "Cantidad mínima",
+    "insufficientQuantity": "Cantidad insuficiente",
+    "delete": "Eliminar"
+  },
+  "signUpPage": {
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar contraseña",
+    "phone": "Teléfono",
+    "selectCountry": "Seleccionar país",
+    "signUp": "Regístrate",
+    "alreadyHaveAccount": "¿Ya tienes una cuenta?",
+    "login": "Iniciar sesión",
+    "passwordNotMatch": "Las contraseñas no coinciden",
+    "passwordLength": "La contraseña debe tener al menos 6 caracteres",
+    "invalidEmail": "Correo electrónico inválido",
+    "phoneLength": "El número de teléfono debe tener al menos 8 caracteres",
+    "phoneNotNumber": "El número de teléfono debe ser un número",
+    "emptyField": "Este campo no puede estar vacío",
+    "errorSignUp": "Error al registrarse. Por favor, inténtelo de nuevo más tarde."
+  },
+  "loginPage": {
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "login": "Iniciar sesión",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "noAccount": "¿No tienes una cuenta?",
+    "signUp": "Regístrate",
+    "errorLogin": "Error al iniciar sesión. Por favor, inténtelo de nuevo más tarde."
+  },
+  "accountPage": {
+    "account": "Cuenta",
+    "personalInfo": "Información personal",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "address": "Dirección",
+    "street": "Calle",
+    "city": "Ciudad",
+    "state": "Estado/Provincia/Departamento",
+    "zipCode": "Código postal",
+    "country": "País",
+    "save": "Guardar",
+    "changePassword": "Cambiar contraseña",
+    "oldPassword": "Contraseña anterior",
+    "newPassword": "Nueva contraseña",
+    "confirmPassword": "Confirmar contraseña",
+    "savePassword": "Guardar contraseña",
+    "errorUpdate": "Error al actualizar la información. Por favor, inténtelo de nuevo más tarde.",
+    "errorUpdatePassword": "Error al actualizar la contraseña. Por favor, inténtelo de nuevo más tarde.",
+    "cancel": "Cancelar",
+    "Modify": "Modificar"
+  },
+
+  "footer": {
+    "contactUs": "Contáctenos",
+    "aboutUs": "Sobre nosotros",
+    "terms": "Términos y condiciones",
+    "privacy": "Política de privacidad",
+    "rights": "Todos los derechos reservados"
+  },
+  "modal": {
+    "close": "Cerrar"
+  },
+  "others": {
+    "currency": "Moneda",
+    "language": "Idioma",
+    "logout": "Cerrar sesión",
+    "profile": "Perfil",
+    "cart": "Carrito",
+    "home": "Inicio",
+    "market": "Mercado",
+    "order": "Pedido",
+    "login": "Iniciar sesión",
+    "signup": "Registrarse",
+    "search": "Buscar",
+    "searchPlaceholder": "Buscar productos",
+    "settings": "Ajustes",
+    "darkMode": "Modo oscuro",
+    "lightMode": "Modo claro",
+    "add": "Añadir",
+    "remove": "Eliminar",
+    "total": "Total",
+    "continue": "Continuar",
+    "checkout": "Revisar",
+    "emptyCart": "Tu carrito está vacío",
+    "emptyCartContent": "Parece que aún no has agregado ningún artículo a tu carrito.",
+    "emptyCartButton": "Continuar comprando",
+    "articles": "Artículos",
+    "address": "Dirección",
+    "orderDetails": "Detalles del pedido",
+    "orderNumber": "Número de pedido",
+    "status": "Estado",
+    "phone": "Número de teléfono",
+    "totalAmount": "Monto total",
+    "caption1": "Pedido",
+    "deliveryAddress": "Dirección de entrega",
+    "fullName": "Nombre completo",
+    "street": "Calle",
+    "city": "Ciudad",
+    "state": "Estado/Provincia/Departamento",
+    "zipCode": "Código postal",
+    "caption2": "Dirección de",
+    "itemsBought": "Artículos comprados",
+    "item": "Artículo",
+    "price": "Precio",
+    "quantity": "Cantidad",
+    "sendEmail": "Enviar correo electrónico",
+    "resetPasswordEmail": "Correo electrónico de restablecimiento de contraseña",
+    "useAccoutnAddress": "Usar dirección de cuenta",
+    "recentlyAdded": "Recientemente añadido"
+  },
+  "nav": {
+    "home": "Inicio",
+    "market": "Mercado",
+    "order": "Pedido",
+    "login": "Iniciar sesión",
+    "signup": "Registrarse",
+    "profile": "Mi cuenta",
+    "logout": "Cerrar sesión",
+    "verifyOrder": "Verificar un pedido",
+    "search": "Buscar",
+    "cart": "Carrito",
+    "myOrders": "Mis pedidos",
+    "maBoutique": "Mi tienda",
+    "addProduct": "Agregar un producto",
+    "myProducts": "Mis productos"
+  },
+
+  "toast": {
+    "addedToCart": "Añadido al carrito",
+    "removedFromCart": "Eliminado del carrito",
+    "errorAddToCart": "Error al agregar al carrito",
+    "errorRemoveFromCart": "Error al eliminar del carrito",
+    "errorQuantity": "Cantidad insuficiente",
+    "errorUpdateCart": "Error al actualizar el carrito",
+    "errorOrder": "Error al ordenar",
+    "errorSignUp": "Error al registrarse",
+    "errorLogin": "Error al iniciar sesión",
+    "errorUpdate": "Error al actualizar la información",
+    "errorUpdatePassword": "Error al actualizar la contraseña",
+    "successUpdate": "Información actualizada con éxito",
+    "successUpdatePassword": "Contraseña actualizada con éxito",
+    "successOrder": "Pedido realizado con éxito",
+    "successSignUp": "Registro exitoso",
+    "successLogin": "Inicio de sesión exitoso",
+    "successLogout": "Cierre de sesión exitoso",
+    "errorLogout": "Error al cerrar sesión",
+    "CurrencyChanged": "Moneda cambiada",
+    "errorCurrencyChanged": "Error al cambiar la moneda",
+    "operationFailed": "Operación fallida",
+    "operationSuccess": "Operación exitosa",
+    "error": "Error"
+  }
+}

@@ -1,1 +1,317 @@
-{}
+{
+  "home": {
+    "section1": {
+      "title": "Cami Market",
+      "content": "Ваш магазин для всех вещей Cami Market",
+      "button": "Купить сейчас"
+    },
+    "section2": {
+      "title": "Наши продукты",
+      "content1": "Мы отправляем по всему миру",
+      "content2": "Оплата возможна после доставки",
+      "button": "Купить сейчас",
+      "product1": {
+        "Name": "Кухонная утварь"
+      },
+      "product2": {
+        "Name": "Ткани Chiganvy"
+      },
+      "product3": {
+        "Name": "Платья для девочек"
+      },
+      "product4": {
+        "Name": "Постельное белье"
+      },
+      "product5": {
+        "Name": "Другие продукты"
+      }
+    },
+    "section3": {
+      "title": "Cami Market",
+      "content": "Ваш магазин для всех вещей Cami Market",
+      "button": "Купить сейчас"
+    },
+    "section4": {
+      "title": "Cami Market",
+      "content": "Ваш магазин для всех вещей Cami Market",
+      "button": "Купить сейчас"
+    }
+  },
+  "market": {
+    "item": {
+      "was": "Было",
+      "quantity": "Количество",
+      "addTocart": "Добавить в корзину",
+      "price": "Цена",
+      "description": "Описание",
+      "deliveryOptions": "Варианты доставки",
+      "perKg": "За кг",
+      "minOrder": "Минимальный заказ",
+      "noDeliveryDestination": "Нет пункта назначения для доставки",
+      "paymentOptions": "Варианты оплаты",
+      "paymentAfterDelivery": "Оплата после доставки",
+      "similarItems": "Похожие товары",
+      "noSimilarItems": "Нет похожих товаров",
+      "bought": "Куплено",
+      "qty": "Количество"
+    }
+  },
+  "itemCard": {
+    "reduction": "Скидка",
+    "outOfStock": "Нет в наличии"
+  },
+
+  "paySummarry": {
+    "details": "Детали",
+    "viewDetails": "Посмотреть детали",
+    "tableCaption": "Сводка заказа включая доставку",
+    "subtotal": "Промежуточный итог",
+    "discount": "Скидка",
+    "shipping": "Доставка",
+    "contactUs": "Связаться с нами",
+    "total": "Итого",
+    "CountryOfDelivery": "Страна доставки",
+    "ContinueToPayment": "Продолжить к оплате"
+  },
+  "CartPage": {
+    "cart": "Корзина",
+    "item": "Товар",
+    "price": "Цена",
+    "quantity": "Количество",
+    "total": "Итого",
+    "remove": "Удалить",
+    "continueShopping": "Продолжить покупки",
+    "checkout": "Оформить заказ",
+    "emptyCart": "Ваша корзина пуста",
+    "emptyCartContent": "Похоже, вы еще не добавили товары в корзину.",
+    "emptyCartButton": "Продолжить покупки"
+  },
+
+  "payPage": {
+    "tableCaption": "Сводка заказа включая доставку",
+    "subtotal": "Промежуточный итог",
+    "discount": "Скидка",
+    "shipping": "Доставка",
+    "contactUs": "Связаться с нами",
+    "total": "Итого",
+    "countryOfDelivery": "Страна доставки",
+    "PaymentMethod": "Метод оплаты",
+    "deliveryDetails": "Детали доставки",
+    "fullName": "Полное имя (Имя и фамилия - обязательно)",
+    "fullNameLabel": "Полное имя",
+    "street": "Улица",
+    "city": "Город (обязательно)",
+    "cityLabel": "Город",
+    "zipCode": "Почтовый индекс",
+    "phone": "Телефон (обязательно)",
+    "phoneLabel": "Телефон",
+    "state": "Штат",
+    "country": "Страна (обязательно)",
+    "countryLabel": "Страна",
+    "orderNow": "Заказать сейчас",
+    "payNow": "Оплатить сейчас",
+    "textYourOrder": "Ваш заказ",
+    "textOrderSuccess": " был успешно отправлен. Пожалуйста, сохраните свой номер заказа для отслеживания.",
+    "textOrderError": "Произошла ошибка при заказе. Пожалуйста, попробуйте позже.",
+    "willContact": "Мы свяжемся с вами для подтверждения вашего заказа и деталей оплаты.",
+    "canContactWhatsApp": "Вы также можете связаться с нами через WhatsApp",
+    "canContactButton": "Связаться с нами",
+    "getReceiptText": "Хотите получить квитанцию за ваш заказ?",
+    "getReceiptButton": "Получить квитанцию",
+    "email": "Email",
+    "viewOrder": "Посмотреть заказ",
+    "close": "Закрыть"
+  },
+
+  "orderCard": {
+    "NumberItemsBought": "Количество купленных товаров"
+  },
+
+  "generics": {
+    "noItemsFound": "Нет товаров",
+    "noItemsFoundContent": "Нет товаров для этой категории",
+    "noItemsFoundButton": "Вернуться на главную",
+    "errorLoadingItems": "Ошибка при загрузке товаров"
+  },
+  "orderDatils": {
+    "orderDetails": "Детали заказа",
+    "orderNumber": "Номер заказа",
+    "status": "Статус",
+    "phone": "Телефон",
+    "totalAmount": "Общая сумма",
+    "caption1": "Заказ",
+    "deliveryAddress": "Адрес доставки",
+    "fullName": "Полное имя",
+    "street": "Улица",
+    "city": "Город",
+    "state": "Штат",
+    "zipCode": "Почтовый индекс",
+    "caption2": "Адрес",
+    "itemsBought": "Купленные товары",
+    "item": "Товар",
+    "price": "Цена",
+    "quantity": "Количество",
+    "articles": "Товары",
+    "address": "Адрес"
+  },
+
+  "shopCard": {
+    "priceSingle": "Цена за шт",
+    "discount": "скидка",
+    "qteMinimum": "Минимальное количество",
+    "insufficientQuantity": "Недостаточное количество",
+    "delete": "Удалить"
+  },
+  "signUpPage": {
+    "firstName": "Имя",
+    "lastName": "Фамилия",
+    "email": "Email",
+    "password": "Пароль",
+    "confirmPassword": "Подтвердите пароль",
+    "phone": "Телефон",
+    "selectCountry": "Выберите страну",
+    "signUp": "Зарегистрироваться",
+    "alreadyHaveAccount": "У вас уже есть аккаунт?",
+    "login": "Войти",
+    "passwordNotMatch": "Пароли не совпадают",
+    "passwordLength": "Пароль должен содержать не менее 6 символов",
+    "invalidEmail": "Неверный email",
+    "phoneLength": "Телефонный номер должен содержать не менее 8 символов",
+    "phoneNotNumber": "Телефонный номер должен быть числом",
+    "emptyField": "Это поле не может быть пустым",
+    "errorSignUp": "Ошибка при регистрации. Пожалуйста, попробуйте позже."
+  },
+  "loginPage": {
+    "email": "Email",
+    "password": "Пароль",
+    "login": "Войти",
+    "forgotPassword": "Забыли пароль?",
+    "noAccount": "У вас нет аккаунта?",
+    "signUp": "Зарегистрироваться",
+    "errorLogin": "Ошибка при входе. Пожалуйста, попробуйте позже."
+  },
+  "accountPage": {
+    "account": "Аккаунт",
+    "personalInfo": "Личная информация",
+    "firstName": "Имя",
+    "lastName": "Фамилия",
+    "email": "Email",
+    "phone": "Телефон",
+    "address": "Адрес",
+    "street": "Улица",
+    "city": "Город",
+    "state": "Штат/Провинция/Регион",
+    "zipCode": "Почтовый индекс",
+    "country": "Страна",
+    "save": "Сохранить",
+    "changePassword": "Изменить пароль",
+    "oldPassword": "Старый пароль",
+    "newPassword": "Новый пароль",
+    "confirmPassword": "Подтвердите пароль",
+    "savePassword": "Сохранить пароль",
+    "errorUpdate": "Ошибка при обновлении информации. Пожалуйста, попробуйте позже.",
+    "errorUpdatePassword": "Ошибка при обновлении пароля. Пожалуйста, попробуйте позже.",
+    "cancel": "Отмена",
+    "Modify": "Изменить"
+  },
+  "toast": {
+    "addedToCart": "Добавлено в корзину",
+    "removedFromCart": "Удалено из корзины",
+    "errorAddToCart": "Ошибка при добавлении в корзину",
+    "errorRemoveFromCart": "Ошибка при удалении из корзины",
+    "errorQuantity": "Недостаточное количество",
+    "errorUpdateCart": "Ошибка при обновлении корзины",
+    "errorOrder": "Ошибка при заказе",
+    "errorSignUp": "Ошибка при регистрации",
+    "errorLogin": "Ошибка при входе",
+    "errorUpdate": "Ошибка при обновлении информации",
+    "errorUpdatePassword": "Ошибка при обновлении пароля",
+    "successUpdate": "Информация успешно обновлена",
+    "successUpdatePassword": "Пароль успешно обновлен",
+    "successOrder": "Заказ успешно оформлен",
+    "successSignUp": "Регистрация успешна",
+    "successLogin": "Вход успешен",
+    "successLogout": "Выход успешен",
+    "errorLogout": "Ошибка при выходе",
+    "CurrencyChanged": "Валюта изменена",
+    "errorCurrencyChanged": "Ошибка при изменении валюты",
+    "operationFailed": "Операция не удалась",
+    "operationSuccess": "Операция успешна",
+    "error": "Ошибка"
+  },
+
+  "footer": {
+    "contactUs": "Связаться с нами",
+    "aboutUs": "О нас",
+    "terms": "Условия и положения",
+    "privacy": "Политика конфиденциальности",
+    "rights": "Все права защищены"
+  },
+  "modal": {
+    "close": "Закрыть"
+  },
+  "others": {
+    "currency": "Валюта",
+    "language": "Язык",
+    "logout": "Выйти",
+    "profile": "Профиль",
+    "cart": "Корзина",
+    "home": "Главная",
+    "market": "Магазин",
+    "order": "Заказ",
+    "login": "Войти",
+    "signup": "Регистрация",
+    "search": "Поиск",
+    "searchPlaceholder": "Поиск товаров",
+    "settings": "Настройки",
+    "darkMode": "Темный режим",
+    "lightMode": "Светлый режим",
+    "add": "Добавить",
+    "remove": "Удалить",
+    "total": "Итого",
+    "continue": "Продолжить",
+    "checkout": "Оформить заказ",
+    "emptyCart": "Ваша корзина пуста",
+    "emptyCartContent": "Похоже, вы еще не добавили товары в корзину.",
+    "emptyCartButton": "Продолжить покупки",
+    "articles": "Товары",
+    "address": "Адрес",
+    "orderDetails": "Детали заказа",
+    "orderNumber": "Номер заказа",
+    "status": "Статус",
+    "phone": "Телефон",
+    "totalAmount": "Общая сумма",
+    "caption1": "Заказ",
+    "deliveryAddress": "Адрес доставки",
+    "fullName": "Полное имя",
+    "street": "Улица",
+    "city": "Город",
+    "state": "Штат",
+    "zipCode": "Почтовый индекс",
+    "caption2": "Адрес",
+    "itemsBought": "Купленные товары",
+    "item": "Товар",
+    "price": "Цена",
+    "quantity": "Количество",
+    "sendEmail": "Отправить email",
+    "resetPasswordEmail": "Email для сброса пароля",
+    "useAccoutnAddress": "Использовать адрес аккаунта",
+    "recentlyAdded": "Недавно добавлено"
+  },
+  "nav": {
+    "home": "Главная",
+    "market": "Магазин",
+    "order": "Заказ",
+    "login": "Войти",
+    "signup": "Регистрация",
+    "profile": "Мой профиль",
+    "logout": "Выйти",
+    "verifyOrder": "Проверить заказ",
+    "search": "Поиск",
+    "cart": "Корзина",
+    "myOrders": "Мои заказы",
+    "maBoutique": "Моя бутик",
+    "addProduct": "Добавить продукт",
+    "myProducts": "Мои продукты"
+  }
+}

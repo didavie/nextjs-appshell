@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -18,7 +22,97 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": [
+        "app/[lang]/components/*"
+      ],
+      "@/hooks/*": [
+        "hooks/*"
+      ],
+      "@/layouts/*": [
+        "app/[lang]/layouts/*"
+      ],
+      "@/pages/*": [
+        "app/[lang]/pages/*"
+      ],
+      "@/styles/*": [
+        "app/[lang]/styles/*"
+      ],
+      "@/utils/*": [
+        "utils/*"
+      ],
+      "@/api/*": [
+        "app/[lang]/api/*"
+      ],
+      "@/config/*": [
+        "config/*"
+      ],
+      "@/constants/*": [
+        "constants/*"
+      ],
+      "@/context/*": [
+        "context/*"
+      ],
+      "@/firebase/*": [
+        "firebase/*"
+      ],
+      "@/i18n/*": [
+        "i18n/*"
+      ],
+      "@/interfaces/*": [
+        "interfaces/*"
+      ],
+      "@/lib/*": [
+        "lib/*"
+      ],
+      "@/models/*": [
+        "models/*"
+      ],
+      "@/services/*": [
+        "services/*"
+      ],
+      "@/store/*": [
+        "store/*"
+      ],
+      "@/types/*": [
+        "types/*"
+      ],
+      "@/validations/*": [
+        "validations/*"
+      ],
+      "@/views/*": [
+        "views/*"
+      ],
+      "@/public/*": [
+        "public/*"
+      ],
+      "@/assets/*": [
+        "assets/*"
+      ],
+      "@/images/*": [
+        "images/*"
+      ],
+      "@/icons/*": [
+        "aicons/*"
+      ],
+      "@/mobile/*": [
+        "app/[lang]/mobile/*"
+      ],
+      "@/desktop/*": [
+        "app/[lang]/desktop/*"
+      ],
+      "@/dictionaries/*": [
+        "dictionarioes/*"
+      ],
+      "@/redux/*": [
+        "redux/*"
+      ],
+      "@/emails/*": [
+        "emails/*"
+      ],
+    }
   },
   "include": [
     "next-env.d.ts",
@@ -26,7 +120,10 @@
     "**/*.tsx",
     "next.config.js",
     ".next/types/**/*.ts",
-    "../market/firebase.tsx"
-, "app/[lang]/search/general/find/[sentence]/pageData.tsx"  ],
-  "exclude": ["node_modules"]
+    "../market/firebase.tsx",
+    "app/[lang]/search/general/find/[sentence]/pageData.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

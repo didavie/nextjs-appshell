@@ -1,1 +1,321 @@
-{}
+{
+  "home": {
+    "section1": {
+      "title": "Cami Market",
+      "content": "Uw one-stop-shop voor alles Cami Market",
+      "button": "Nu winkelen"
+    },
+    "section2": {
+      "title": "Onze producten",
+      "content1": "We verzenden wereldwijd",
+      "content2": "Betaling mogelijk na verzending",
+      "button": "Nu winkelen",
+      "product1": {
+        "Name": "Keukengerei"
+      },
+      "product2": {
+        "Name": "Chiganvy-stoffen"
+      },
+      "product3": {
+        "Name": "Meisjesjurken"
+      },
+      "product4": {
+        "Name": "Beddengoed"
+      },
+      "product5": {
+        "Name": "Andere producten"
+      }
+    },
+    "section3": {
+      "title": "Cami Market",
+      "content": "Uw one-stop-shop voor alles Cami Market",
+      "button": "Nu winkelen"
+    },
+    "section4": {
+      "title": "Cami Market",
+      "content": "Uw one-stop-shop voor alles Cami Market",
+      "button": "Nu winkelen"
+    }
+  },
+
+  "market": {
+    "item": {
+      "was": "Was",
+      "quantity": "Hoeveelheid",
+      "addTocart": "Toevoegen aan winkelwagen",
+      "price": "Prijs",
+      "description": "Beschrijving",
+      "deliveryOptions": "Leveringsopties",
+      "perKg": "Per Kg",
+      "minOrder": "Minimale bestelling",
+      "noDeliveryDestination": "Geen leveringsbestemming",
+      "paymentOptions": "Betalingsmogelijkheden",
+      "paymentAfterDelivery": "Betaling na levering",
+      "similarItems": "Vergelijkbare items",
+      "noSimilarItems": "Geen vergelijkbare items",
+      "bought": "Gekocht",
+      "qty": "Aantal"
+    }
+  },
+
+  "itemCard": {
+    "reduction": "uit",
+    "outOfStock": "Niet op voorraad"
+  },
+
+  "paySummarry": {
+    "details": "Details",
+    "viewDetails": "Bekijk details",
+    "tableCaption": "Bestellingsoverzicht inclusief verzending",
+    "subtotal": "Subtotaal",
+    "discount": "Korting",
+    "shipping": "Verzending",
+    "contactUs": "Contact",
+    "total": "Totaal",
+    "CountryOfDelivery": "Land van levering",
+    "ContinueToPayment": "Doorgaan naar betaling"
+  },
+  "CartPage": {
+    "cart": "Winkelwagen",
+    "item": "Item",
+    "price": "Prijs",
+    "quantity": "Aantal",
+    "total": "Totaal",
+    "remove": "Verwijderen",
+    "continueShopping": "Verder winkelen",
+    "checkout": "Afrekenen",
+    "emptyCart": "Uw winkelwagen is leeg",
+    "emptyCartContent": "Het lijkt erop dat u nog geen items aan uw winkelwagen heeft toegevoegd.",
+    "emptyCartButton": "Verder winkelen"
+  },
+
+  "payPage": {
+    "tableCaption": "Bestellingsoverzicht inclusief verzending",
+    "subtotal": "Subtotaal",
+    "discount": "Korting",
+    "shipping": "Verzending",
+    "contactUs": "Contact",
+    "total": "Totaal",
+    "countryOfDelivery": "Land van levering",
+    "PaymentMethod": "Betalingsmethode",
+    "deliveryDetails": "Leveringsdetails",
+    "fullName": "Volledige naam (Voornaam en achternaam - Verplicht)",
+    "fullNameLabel": "Volledige naam",
+    "street": "Straat",
+    "city": "Stad (Verplicht)",
+    "cityLabel": "Stad",
+    "zipCode": "Postcode",
+    "phone": "Telefoon (Verplicht)",
+    "phoneLabel": "Telefoon",
+    "state": "Staat",
+    "country": "Land (Verplicht)",
+    "countryLabel": "Land",
+    "orderNow": "Bestel nu",
+    "payNow": "Betaal nu",
+    "textYourOrder": "Uw bestelling",
+    "textOrderSuccess": " is succesvol verzonden. Bewaar alstublieft uw bestelnummer voor tracking.",
+    "textOrderError": "Er is een fout opgetreden bij het bestellen. Probeer het later opnieuw.",
+    "willContact": "We zullen contact met u opnemen om uw bestelling en betalingsgegevens te bevestigen.",
+    "canContactWhatsApp": "U kunt ons ook bereiken via WhatsApp",
+    "canContactButton": "Contact",
+    "getReceiptText": "Wilt u een ontvangstbewijs voor uw bestelling ontvangen?",
+    "getReceiptButton": "Ontvang het ontvangstbewijs",
+    "email": "Email",
+    "viewOrder": "Bekijk bestelling",
+    "close": "Sluiten"
+  },
+
+  "orderCard": {
+    "NumberItemsBought": "Aantal gekochte items"
+  },
+
+  "generics": {
+    "noItemsFound": "Geen items gevonden",
+    "noItemsFoundContent": "Geen items gevonden voor deze categorie",
+    "noItemsFoundButton": "Terug naar home",
+    "errorLoadingItems": "Fout bij het laden van items"
+  },
+
+  "orderDatils": {
+    "orderDetails": "Bestelgegevens",
+    "orderNumber": "Bestelnummer",
+    "status": "Status",
+    "phone": "Telefoonnummer",
+    "totalAmount": "Totaalbedrag",
+    "caption1": "Bestelling",
+    "deliveryAddress": "Afleveradres",
+    "fullName": "Volledige naam",
+    "street": "Straat",
+    "city": "Stad",
+    "state": "Staat",
+    "zipCode": "Postcode",
+    "caption2": "Adres van",
+    "itemsBought": "Gekochte items",
+    "item": "Item",
+    "price": "Prijs",
+    "quantity": "Aantal",
+    "articles": "Artikelen",
+    "address": "Adres"
+  },
+
+  "shopCard": {
+    "priceSingle": "Prijs per stuk",
+    "discount": "korting",
+    "qteMinimum": "Minimale hoeveelheid",
+    "insufficientQuantity": "Onvoldoende hoeveelheid",
+    "delete": "Verwijderen"
+  },
+
+  "signUpPage": {
+    "firstName": "Voornaam",
+    "lastName": "Achternaam",
+    "email": "Email",
+    "password": "Wachtwoord",
+    "confirmPassword": "Bevestig wachtwoord",
+    "phone": "Telefoon",
+    "selectCountry": "Selecteer land",
+    "signUp": "Registreren",
+    "alreadyHaveAccount": "Heeft u al een account?",
+    "login": "Inloggen",
+    "passwordNotMatch": "Wachtwoorden komen niet overeen",
+    "passwordLength": "Wachtwoord moet minimaal 6 tekens bevatten",
+    "invalidEmail": "Ongeldige email",
+    "phoneLength": "Telefoonnummer moet minimaal 8 tekens bevatten",
+    "phoneNotNumber": "Telefoonnummer moet een nummer zijn",
+    "emptyField": "Dit veld mag niet leeg zijn",
+    "errorSignUp": "Fout bij registreren. Probeer het later opnieuw."
+  },
+  "loginPage": {
+    "email": "Email",
+    "password": "Wachtwoord",
+    "login": "Inloggen",
+    "forgotPassword": "Wachtwoord vergeten?",
+    "noAccount": "Heeft u geen account?",
+    "signUp": "Registreren",
+    "errorLogin": "Fout bij inloggen. Probeer het later opnieuw."
+  },
+  "accountPage": {
+    "account": "Account",
+    "personalInfo": "Persoonlijke informatie",
+    "firstName": "Voornaam",
+    "lastName": "Achternaam",
+    "email": "Email",
+    "phone": "Telefoon",
+    "address": "Adres",
+    "street": "Straat",
+    "city": "Stad",
+    "state": "Staat/Provincie/Departement",
+    "zipCode": "Postcode",
+    "country": "Land",
+    "save": "Opslaan",
+    "changePassword": "Wachtwoord wijzigen",
+    "oldPassword": "Oud wachtwoord",
+    "newPassword": "Nieuw wachtwoord",
+    "confirmPassword": "Bevestig wachtwoord",
+    "savePassword": "Wachtwoord opslaan",
+    "errorUpdate": "Fout bij het bijwerken van informatie. Probeer het later opnieuw.",
+    "errorUpdatePassword": "Fout bij het bijwerken van wachtwoord. Probeer het later opnieuw.",
+    "cancel": "Annuleren",
+    "Modify": "Wijzigen"
+  },
+  "toast": {
+    "addedToCart": "Toegevoegd aan winkelwagen",
+    "removedFromCart": "Verwijderd uit winkelwagen",
+    "errorAddToCart": "Fout bij toevoegen aan winkelwagen",
+    "errorRemoveFromCart": "Fout bij verwijderen uit winkelwagen",
+    "errorQuantity": "Onvoldoende hoeveelheid",
+    "errorUpdateCart": "Fout bij bijwerken van winkelwagen",
+    "errorOrder": "Fout bij bestellen",
+    "errorSignUp": "Fout bij registreren",
+    "errorLogin": "Fout bij inloggen",
+    "errorUpdate": "Fout bij bijwerken van informatie",
+    "errorUpdatePassword": "Fout bij bijwerken van wachtwoord",
+    "successUpdate": "Informatie succesvol bijgewerkt",
+    "successUpdatePassword": "Wachtwoord succesvol bijgewerkt",
+    "successOrder": "Bestelling succesvol geplaatst",
+    "successSignUp": "Registratie succesvol",
+    "successLogin": "Inloggen succesvol",
+    "successLogout": "Uitloggen succesvol",
+    "errorLogout": "Fout bij uitloggen",
+    "CurrencyChanged": "Valuta gewijzigd",
+    "errorCurrencyChanged": "Fout bij wijzigen van valuta",
+    "operationFailed": "Operatie mislukt",
+    "operationSuccess": "Operatie geslaagd",
+    "error": "Fout"
+  },
+
+  "footer": {
+    "contactUs": "Contact",
+    "aboutUs": "Over ons",
+    "terms": "Voorwaarden",
+    "privacy": "Privacybeleid",
+    "rights": "Alle rechten voorbehouden"
+  },
+  "modal": {
+    "close": "Sluiten"
+  },
+  "others": {
+    "currency": "Valuta",
+    "language": "Taal",
+    "logout": "Uitloggen",
+    "profile": "Profiel",
+    "cart": "Winkelwagen",
+    "home": "Home",
+    "market": "Markt",
+    "order": "Bestelling",
+    "login": "Inloggen",
+    "signup": "Registreren",
+    "search": "Zoeken",
+    "searchPlaceholder": "Zoek producten",
+    "settings": "Instellingen",
+    "darkMode": "Donkere modus",
+    "lightMode": "Lichte modus",
+    "add": "Toevoegen",
+    "remove": "Verwijderen",
+    "total": "Totaal",
+    "continue": "Doorgaan",
+    "checkout": "Afrekenen",
+    "emptyCart": "Uw winkelwagen is leeg",
+    "emptyCartContent": "Het lijkt erop dat u nog geen items aan uw winkelwagen heeft toegevoegd.",
+    "emptyCartButton": "Verder winkelen",
+    "articles": "Artikelen",
+    "address": "Adres",
+    "orderDetails": "Bestelgegevens",
+    "orderNumber": "Bestelnummer",
+    "status": "Status",
+    "phone": "Telefoonnummer",
+    "totalAmount": "Totaalbedrag",
+    "caption1": "Bestelling",
+    "deliveryAddress": "Afleveradres",
+    "fullName": "Volledige naam",
+    "street": "Straat",
+    "city": "Stad",
+    "state": "Staat/Provincie/Departement",
+    "zipCode": "Postcode",
+    "caption2": "Adres van",
+    "itemsBought": "Gekochte items",
+    "item": "Item",
+    "price": "Prijs",
+    "quantity": "Aantal",
+    "sendEmail": "Stuur een e-mail",
+    "resetPasswordEmail": "Wachtwoord reset e-mail",
+    "useAccoutnAddress": "Gebruik het adres van het account",
+    "recentlyAdded": "Recent toegevoegd"
+  },
+  "nav": {
+    "home": "Home",
+    "market": "Markt",
+    "order": "Bestelling",
+    "login": "Inloggen",
+    "signup": "Registreren",
+    "profile": "Mijn account",
+    "logout": "Uitloggen",
+    "verifyOrder": "Bestelling controleren",
+    "search": "Zoeken",
+    "cart": "Winkelwagen",
+    "myOrders": "Mijn bestellingen",
+    "maBoutique": "Mijn winkel",
+    "addProduct": "Product toevoegen",
+    "myProducts": "Mijn producten"
+  }
+}

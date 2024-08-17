@@ -1,3 +1,318 @@
 {
-  
+  "home": {
+    "section1": {
+      "title": "Cami Market
+",
+      "content": "Your one stop shop for all things Cami Market",
+      "button": "Shop Now"
+    },
+    "section2": {
+      "title": "Our Products",
+      "content1": "We ship worldwide",
+      "content2": "Payement possible after shipping",
+      "button": "Shop Now",
+      "product1": {
+        "Name": "Kitchenware"
+      },
+      "product2": {
+        "Name": "Chiganvy Fabrics"
+      },
+      "product3": {
+        "Name": "Girls Dresses"
+      },
+      "product4": {
+        "Name": "Bedding"
+      },
+      "product5": {
+        "Name": "Other Products"
+      }
+    },
+    "section3": {
+      "title": "Cami Market",
+      "content": "Your one stop shop for all things Cami Market",
+      "button": "Shop Now"
+    },
+    "section4": {
+      "title": "Cami Market",
+      "content": "Your one stop shop for all things Cami Market",
+      "button": "Shop Now"
+    }
+  },
+  "market": {
+    "item": {
+      "was": "Was",
+      "quantity": "Quantity",
+      "addTocart": "Add to cart",
+      "price": "Price",
+      "description": "Description",
+      "deliveryOptions": "Delivery Options",
+      "perKg": "Per Kg",
+      "minOrder": "Minimum Order",
+      "noDeliveryDestination": "No delivery destination",
+      "paymentOptions": "Payment Options",
+      "paymentAfterDelivery": "Payment after delivery",
+      "similarItems": "Similar Items",
+      "noSimilarItems": "No similar items",
+      "bought": "Bought",
+      "qty": "Qty"
+    }
+  },
+  "itemCard": {
+    "reduction": "off",
+    "outOfStock": "Out of stock"
+  },
+  "paySummarry": {
+    "details": "Details",
+    "viewDetails": "View details",
+    "tableCaption": "Order Summary Including Shipping",
+    "subtotal": "Subtotal",
+    "discount": "Discount",
+    "shipping": "Shipping",
+    "contactUs": "Contact Us",
+    "total": "Total",
+    "CountryOfDelivery": "Delivery Country",
+    "ContinueToPayment": "Continue to Payment"
+  },
+  "CartPage": {
+    "cart": "Cart",
+    "item": "Item",
+    "price": "Price",
+    "quantity": "Quantity",
+    "total": "Total",
+    "remove": "Remove",
+    "continueShopping": "Continue Shopping",
+    "checkout": "Checkout",
+    "emptyCart": "Your cart is empty",
+    "emptyCartContent": "Looks like you haven't added any items to your cart yet.",
+    "emptyCartButton": "Continue Shopping"
+  },
+
+  "payPage": {
+    "tableCaption": "Order Summary Including Shipping",
+    "subtotal": "Subtotal",
+    "discount": "Discount",
+    "shipping": "Shipping",
+    "contactUs": "Contact Us",
+    "total": "Total",
+    "countryOfDelivery": "Delivery Country",
+    "PaymentMethod": "Payment Method",
+    "deliveryDetails": "Delivery Details",
+    "fullName": "Full Name (First and Last Name - Required)",
+    "fullNameLabel": "Full Name",
+    "street": "Street",
+    "city": "City (Required)",
+    "cityLabel": "City",
+    "zipCode": "Zip Code",
+    "phone": "Phone (Required)",
+    "phoneLabel": "Phone",
+    "state": "State",
+    "country": "Country (Required)",
+    "countryLabel": "Country",
+    "orderNow": "Order Now",
+    "payNow": "Pay Now",
+    "textYourOrder": "Your order",
+    "textOrderSuccess": " has been successfully sent. Please, kindly save your order number for tracking.",
+    "textOrderError": "An error occurred while ordering. Please try again later.",
+    "willContact": "We will contact you to confirm your order and payment details.",
+    "canContactWhatsApp": "You can also contact us via WhatsApp",
+    "canContactButton": "Contact Us",
+    "getReceiptText": "Would you like to receive a receipt for your order?",
+    "getReceiptButton": "Receive Receipt",
+    "email": "Email",
+    "viewOrder": "View Order",
+    "close": "Close"
+  },
+
+  "orderCard": {
+    "NumberItemsBought": "Number of items bought"
+  },
+
+  "generics": {
+    "noItemsFound": "No items found",
+    "noItemsFoundContent": "No items found for this category",
+    "noItemsFoundButton": "Back to home",
+    "errorLoadingItems": "Error loading items"
+  },
+
+  "orderDatils": {
+    "orderDetails": "Order Details",
+    "orderNumber": "Order Number",
+    "status": "Status",
+    "phone": "Phone Number",
+    "totalAmount": "Total Amount",
+    "caption1": "Order",
+    "deliveryAddress": "Delivery Address",
+    "fullName": "Full Name",
+    "street": "Street",
+    "city": "City",
+    "state": "State",
+    "zipCode": "Zip Code",
+    "caption2": "Address of",
+    "itemsBought": "Items Bought",
+    "item": "Item",
+    "price": "Price",
+    "quantity": "Quantity",
+    "articles": "items",
+    "address": "Address"
+  },
+  "shopCard": {
+    "priceSingle": "Unit Price",
+    "discount": "off",
+    "qteMinimum": "Minimum Quantity",
+    "insufficientQuantity": "Insufficient Quantity",
+    "delete": "Delete"
+  },
+
+  "signUpPage": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "phone": "Phone",
+    "selectCountry": "Select Country",
+    "signUp": "Sign Up",
+    "alreadyHaveAccount": "Already have an account?",
+    "login": "Login",
+    "passwordNotMatch": "Passwords do not match",
+    "passwordLength": "Password must be at least 6 characters",
+    "invalidEmail": "Invalid email",
+    "phoneLength": "Phone number must be at least 8 characters",
+    "phoneNotNumber": "Phone number must be a number",
+    "emptyField": "This field cannot be empty",
+    "errorSignUp": "Error signing up. Please try again later."
+  },
+  "loginPage": {
+    "email": "Email",
+    "password": "Password",
+    "login": "Login",
+    "forgotPassword": "Forgot Password?",
+    "noAccount": "Don't have an account?",
+    "signUp": "Sign Up",
+    "errorLogin": "Error logging in. Please try again later."
+  },
+  "accountPage": {
+    "account": "Account",
+    "personalInfo": "Personal Information",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "street": "Street",
+    "city": "City",
+    "state": "State/Province/Department",
+    "zipCode": "Zip Code",
+    "country": "Country",
+    "save": "Save",
+    "changePassword": "Change Password",
+    "oldPassword": "Old Password",
+    "newPassword": "New Password",
+    "confirmPassword": "Confirm Password",
+    "savePassword": "Save Password",
+    "errorUpdate": "Error updating information. Please try again later.",
+    "errorUpdatePassword": "Error updating password. Please try again later.",
+    "cancel": "Cancel",
+    "Modify": "Modify"
+  },
+  "toast": {
+    "addedToCart": "Added to cart",
+    "removedFromCart": "Removed from cart",
+    "errorAddToCart": "Error adding to cart",
+    "errorRemoveFromCart": "Error removing from cart",
+    "errorQuantity": "Insufficient quantity",
+    "errorUpdateCart": "Error updating cart",
+    "errorOrder": "Error ordering",
+    "errorSignUp": "Error signing up",
+    "errorLogin": "Error logging in",
+    "errorUpdate": "Error updating information",
+    "errorUpdatePassword": "Error updating password",
+    "successUpdate": "Information updated successfully",
+    "successUpdatePassword": "Password updated successfully",
+    "successOrder": "Order placed successfully",
+    "successSignUp": "Sign up successful",
+    "successLogin": "Login successful",
+    "successLogout": "Logout successful",
+    "errorLogout": "Error logging out",
+    "CurrencyChanged": "Currency changed",
+    "errorCurrencyChanged": "Error changing currency",
+    "operationFailed": "Operation failed",
+    "operationSuccess": "Operation successful",
+    "error": "Error"
+  },
+
+  "footer": {
+    "contactUs": "Contact Us",
+    "aboutUs": "About Us",
+    "terms": "Terms and Conditions",
+    "privacy": "Privacy Policy",
+    "rights": "All Rights Reserved"
+  },
+  "modal": {
+    "close": "Close"
+  },
+  "others": {
+    "currency": "Currency",
+    "language": "Language",
+    "logout": "Logout",
+    "profile": "Profile",
+    "cart": "Cart",
+    "home": "Home",
+    "market": "Market",
+    "order": "Order",
+    "login": "Login",
+    "signup": "Sign Up",
+    "search": "Search",
+    "searchPlaceholder": "Search for products",
+    "settings": "Settings",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "add": "Add",
+    "remove": "Remove",
+    "total": "Total",
+    "continue": "Continue",
+    "checkout": "Checkout",
+    "emptyCart": "Your cart is empty",
+    "emptyCartContent": "Looks like you haven't added any items to your cart yet.",
+    "emptyCartButton": "Continue Shopping",
+    "articles": "Articles",
+    "address": "Address",
+    "orderDetails": "Order Details",
+    "orderNumber": "Order Number",
+    "status": "Status",
+    "phone": "Phone Number",
+    "totalAmount": "Total Amount",
+    "caption1": "Order",
+    "deliveryAddress": "Delivery Address",
+    "fullName": "Full Name",
+    "street": "Street",
+    "city": "City",
+    "state": "State/Province/Department",
+    "zipCode": "Zip Code",
+    "caption2": "Address of",
+    "itemsBought": "Items Bought",
+    "item": "Item",
+    "price": "Price",
+    "quantity": "Quantity",
+    "sendEmail": "Send Email",
+    "resetPasswordEmail": "Reset Password Email",
+    "useAccoutnAddress": "Use Account Address",
+    "recentlyAdded": "Recently Added"
+  },
+  "nav": {
+    "home": "Home",
+    "market": "Market",
+    "order": "Order",
+    "login": "Login",
+    "signup": "Sign Up",
+    "profile": "My Account",
+    "logout": "Logout",
+    "verifyOrder": "Verify Order",
+    "search": "Search",
+    "cart": "Cart",
+    "myOrders": "My Orders",
+    "maBoutique": "My Shop",
+    "addProduct": "Add Product",
+    "myProducts": "My Products"
+  }
 }
