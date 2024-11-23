@@ -43,7 +43,7 @@ import {
   ModalBody,
   ModalCloseButton,
 } from "@chakra-ui/react";
-import { userApi } from "@/components/api/user";
+import { userApi } from "@/components/api/v1/user";
 import { useAppDispatch } from "@/hooks/useAppDispatch";
 import { Divider } from "@mantine/core";
 import { useInterval } from "@mantine/hooks";

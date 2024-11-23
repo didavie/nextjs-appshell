@@ -24,7 +24,7 @@ import { countries } from "config/constants";
 import { Table, Tbody, Tr, Td, TableContainer } from "@chakra-ui/react";
 import { UserCollectionRef } from "models/models";
 import { Country, User } from "types/interfaces";
-import { userApi } from "@/components/api/user";
+import { userApi } from "@/components/api/v1/user";
 import { useAppDispatch } from "hooks/useAppDispatch";
 import { useToast } from "@chakra-ui/react";
 import { FetchBaseQueryError } from "@reduxjs/toolkit/query";

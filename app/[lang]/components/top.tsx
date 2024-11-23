@@ -4,19 +4,22 @@ import { useAppDispatch } from "@/hooks/useAppDispatch";
 import { useAppSelector } from "@/hooks/useAppSelector";
 import { setPostFilter } from "@/redux/actions/post";
 import { RootState } from "@/redux/store/store";
-import { Box, Text, useMediaQuery } from "@chakra-ui/react";
+import { Box, Button, Text, useMediaQuery } from "@chakra-ui/react";
 import { Locale } from "i18n-config";
 import { usePathname } from "next/navigation";
 import useAppRouter from "@/hooks/useAppRouter";
 
 import { useSigninCheck } from "reactfire";
+import { Dictionary } from "get-dictionary";
 
 const Top = ({
   children,
   lang,
+  dictionary,
 }: {
   children: React.ReactNode;
   lang: Locale;
+  dictionary: Dictionary;
 }) => {
   const { status, data: signInCheckResult } = useSigninCheck();
   const [isMobile] = useMediaQuery(`(max-width: ${Breakpoints.sm}px)`);
@@ -36,14 +39,6 @@ const Top = ({
       pt={4}
     >
       <Box
-        display={isMobile ? "none" : "flex"}
-        flexDirection="row"
-        justifyContent="center"
-        alignItems="center"
-        minH={"100vh"}
-        w="30%"
-      ></Box>
-      <Box
         display="flex"
         flexDirection="column"
         justifyContent="flex-start"
@@ -57,19 +52,19 @@ const Top = ({
           justifyContent="flex-start"
           alignItems="top"
           width="100%"
-          p={2}
         >
           <Box
             display="flex"
             flexDirection="row"
-            justifyContent="flex-start"
-            alignItems="left"
-            width="100%"
+            justifyContent="center"
+            alignItems="center"
+            width="fit-content"
             border={"solid"}
             borderColor="gray.400"
             borderRadius={10}
             borderWidth={1}
             p={2}
+            pr={4}
           >
             <Text
               pr={4}
@@ -80,7 +75,7 @@ const Top = ({
               }}
               fontWeight={viewPostsFilter === "Latest" ? "bold" : "normal"}
             >
-              Latest
+              {dictionary.latest}
             </Text>
             <Text
               pr={4}
@@ -91,7 +86,7 @@ const Top = ({
               }}
               fontWeight={viewPostsFilter === "Popular" ? "bold" : "normal"}
             >
-              Popular
+              {dictionary.popular}
             </Text>
             <Text
               color={viewPostsFilter === "Category" ? "blue.500" : "black"}
@@ -101,11 +96,29 @@ const Top = ({
               }}
               fontWeight={viewPostsFilter === "Category" ? "bold" : "normal"}
             >
-              Category
+              {dictionary.category}
             </Text>
           </Box>
           <Box
-            display="flex"
+            display={isMobile ? "none" : "flex"}
+            flexDirection="row"
+            justifyContent="flex-end"
+            alignItems="right"
+            width="100%"
+            p={2}
+          >
+            <Button
+              colorScheme="blue"
+              variant="outline"
+              onClick={() => {
+                router.push(`/${lang}/post/create`);
+              }}
+            >
+              {dictionary.createPost}
+            </Button>
+          </Box>
+          <Box
+            display={isMobile ? "none" : "flex"}
             flexDirection="row"
             justifyContent="flex-end"
             alignItems="right"
@@ -119,33 +132,14 @@ const Top = ({
               alignItems="right"
               width="100%"
               p={2}
-              color={path.includes(`/${lang}/events`) ? "blue.500" : "black"}
+              color={"blue.500"}
               onClick={() => {
                 router.push(`/${lang}/events`);
               }}
               fontWeight={path.includes(`/${lang}/events`) ? "bold" : "normal"}
             >
-              <Text pr={4}>Events</Text>
+              <Text pr={4}>{dictionary.events}</Text>
             </Box>
-            {/* <Box
-              display="flex"
-              flexDirection="row"
-              justifyContent="flex-end"
-              alignItems="right"
-              width="100%"
-              p={2}
-              color={
-                path.includes(`/${lang}/presentations`) ? "blue.500" : "black"
-              }
-              onClick={() => {
-                router.push(`/${lang}/presentations`);
-              }}
-              fontWeight={
-                path.includes(`/${lang}/presentations`) ? "bold" : "normal"
-              }
-            >
-              <Text>Presentations</Text>
-            </Box> */}
           </Box>
         </Box>
         <Box
@@ -158,16 +152,6 @@ const Top = ({
           {children}
         </Box>
       </Box>
-
-      <Box
-        display={isMobile ? "none" : "flex"}
-        flexDirection="row"
-        justifyContent="center"
-        alignItems="center"
-        width="100%"
-        minH={"100vh"}
-        w="30%"
-      ></Box>
     </Box>
   );
 };

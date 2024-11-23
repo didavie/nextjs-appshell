@@ -199,3 +199,4 @@ export const theme = extendTheme({
 });
 
 export const MaxMobileWidth = "768px";
+export const MaxDesktopWidth = "1200px";

@@ -22,6 +22,9 @@ export interface User {
   address?: Address;
   currency?: string;
   resume?: Resume;
+  roles?: string[];
+  roleId?: number;
+  rolesId?: number[];
 }
 
 export interface Resume {
@@ -39,7 +42,8 @@ export type UserStatus =
   | "inactive"
   | "banned"
   | "deleted"
-  | "disabled";
+  | "disabled"
+  | "blocked";
 
 export type UserRoles =
   | "user"
@@ -130,6 +134,8 @@ export interface Post {
   };
   translated?: Translated;
   likes?: number;
+  views?: number;
+  viwers?: string[];
 }
 
 export interface Info {

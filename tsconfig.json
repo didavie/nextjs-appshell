@@ -112,6 +112,9 @@
       "@/emails/*": [
         "emails/*"
       ],
+      "@/device/*": [
+        "app/[lang]/[device]/*"
+      ],
     }
   },
   "include": [

@@ -4,6 +4,7 @@ export const configurationAction = {
 
 export const userAction = {
   loginInfo: "loginInfo",
+  currentLanguage: "currentLanguage",
 };
 
 export const postAction = {

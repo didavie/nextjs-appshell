@@ -43,11 +43,19 @@ import { Api } from "@/redux/api/api";
 import { Locale } from "i18n-config";
 import { useHeadroom, useInterval } from "@mantine/hooks";
 import { IconMapPin } from "@tabler/icons-react";
-import { rem } from "@mantine/core";
+import { Avatar, rem, Select } from "@mantine/core";
 import { QueryStatus } from "@reduxjs/toolkit/query";
 import { ParsedToken } from "firebase/auth";
 import { Breakpoints } from "@/config/ui";
-import { FontSizeXS, FontSizeXXS, FontSizeXXXS } from "@/config/styling";
+import {
+  FontSizeL,
+  FontSizeSM,
+  FontSizeXS,
+  FontSizeXXS,
+  FontSizeXXXS,
+} from "@/config/styling";
+import { SupportedLanguages } from "@/config/constants";
+import { setCurrentLanguage } from "@/redux/actions/users";
 
 const Navbar = ({ lang, dictionary }: { lang: Locale; dictionary: any }) => {
   const router = useAppRouter();
@@ -74,6 +82,11 @@ const Navbar = ({ lang, dictionary }: { lang: Locale; dictionary: any }) => {
   const [getLocationsData, setGetLocationsData] = useState<any>(null);
   const auth = useAuth();
   const [isMobile] = useMediaQuery(`(max-width: ${Breakpoints.sm}px)`);
+  const selectOptions = SupportedLanguages.map((lang) => ({
+    value: lang.code,
+    label: lang.nativeName,
+  }));
+  const { data: signInCheckResult } = useSigninCheck();
 
   useEffect(() => {
     if (status !== "success" || !signinResult?.signedIn) {
@@ -129,7 +142,7 @@ const Navbar = ({ lang, dictionary }: { lang: Locale; dictionary: any }) => {
           alignItems="center"
           width="100vw"
           minWidth={isMobile ? "100vw" : Breakpoints.lg}
-          maxW={isMobile ? "100%" : Breakpoints.lg}
+          maxW={isMobile ? "100vw" : Breakpoints.lg}
           margin={"auto"}
           mr={isMobile ? 5 : "auto"}
         >
@@ -164,18 +177,18 @@ const Navbar = ({ lang, dictionary }: { lang: Locale; dictionary: any }) => {
               fontWeight={700}
               textTransform="uppercase"
             >
-              Learn
+              {dictionary.learn}
             </Text>
           </Box>
 
           <Box
             display="flex"
-            justifyContent="left"
-            alignItems="flex-start"
+            justifyContent="center"
+            alignItems="center"
             width="100%"
             margin={"auto"}
           >
-            <InputGroup maxW={isMobile ? "100%" : "60%"} marginLeft={2}>
+            {/* <InputGroup maxW={isMobile ? "100%" : "400px"} marginLeft={2}>
               <InputLeftAddon
                 h={"40px"}
                 w={"40px"}
@@ -212,10 +225,10 @@ const Navbar = ({ lang, dictionary }: { lang: Locale; dictionary: any }) => {
                   // giggle the text every 2 seconds
                   transform={`rotate(${seconds % 2 === 0 ? 3 : -3}deg)`}
                 >
-                  Made by Coovi Meha
+                  {dictionary.madeBy} Coovi Meha
                 </Text>
               </InputRightElement>
-            </InputGroup>
+            </InputGroup> */}
           </Box>
           <Box
             style={{
@@ -225,6 +238,44 @@ const Navbar = ({ lang, dictionary }: { lang: Locale; dictionary: any }) => {
             }}
           >
             <Box
+              style={{
+                display: isMobile ? "none" : "flex",
+                alignItems: "flex-start",
+                justifyContent: "center",
+                flexDirection: "column",
+                backgroundColor: "#f8f9fa",
+                color: "black",
+              }}
+            >
+              <Select
+                data={selectOptions}
+                value={selectOptions.find((o) => o.value === lang)?.value}
+                onChange={(_value, option) => {
+                  if (option.value === currentPathLang) {
+                    return;
+                  }
+                  if (
+                    option.value &&
+                    (option.value !== "" || option.value !== undefined)
+                  ) {
+                    const newPath = paths.replace(
+                      `/${currentPathLang}`,
+                      `/${option.value}`
+                    );
+                    dispatch(setCurrentLanguage(option.value));
+                    router.push(newPath);
+                  }
+                }}
+                placeholder="Select language"
+                style={{
+                  width: "100px",
+                  color: "black",
+                  backgroundColor: "#f8f9fa",
+                }}
+              />
+            </Box>
+
+            <Box
               display={!isMobile ? "flex" : "none"}
               justifyContent="center"
               alignItems="center"
@@ -233,9 +284,90 @@ const Navbar = ({ lang, dictionary }: { lang: Locale; dictionary: any }) => {
                 setIsOpen(true);
               }}
             >
-              <Button fontSize={12} textTransform="capitalize" variant="solid">
-                Create account
+              <Button
+                onClick={() => {
+                  router.push(`/${currentPathLang}/user/signup`);
+                }}
+                w={"100%"}
+                display={signInCheckResult?.signedIn ? "none" : "block"}
+                fontSize={FontSizeXS}
+                m={2}
+                mt={0}
+                variant="solid"
+              >
+                {dictionary.signUp}
               </Button>
+              <Button
+                onClick={() => {
+                  router.push(`/${currentPathLang}/user/login`);
+                }}
+                w={"100%"}
+                display={signInCheckResult?.signedIn ? "none" : "block"}
+                m={2}
+                fontSize={FontSizeXS}
+                mt={0}
+                variant="solid"
+              >
+                {dictionary.login}
+              </Button>
+            </Box>
+            <Box
+              style={{
+                display:
+                  signInCheckResult?.signedIn && !isMobile ? "block" : "none",
+                justifyContent: "flex-start",
+                alignItems: "left",
+              }}
+              w={"100%"}
+              m={"auto"}
+              borderRadius={15}
+              backgroundColor={"#f0f0f0"}
+              border={"aliceblue"}
+              boxShadow="md"
+              p={2}
+            >
+              <Box
+                style={{
+                  display: "flex",
+                  justifyContent: "flex-start",
+                  alignItems: "center",
+                }}
+                w={"100%"}
+                m={"auto"}
+                onClick={() => {
+                  router.push(`/${currentPathLang}/user/account`);
+                }}
+              >
+                <Avatar
+                  src={
+                    signInCheckResult?.signedIn
+                      ? signInCheckResult.user.photoURL ?? ""
+                      : ""
+                  }
+                  size={"md"}
+                  display={signInCheckResult?.signedIn ? "block" : "none"}
+                />
+                <Box>
+                  <Text
+                    display={signInCheckResult?.signedIn ? "block" : "none"}
+                    fontSize={FontSizeL}
+                    pl={2}
+                  >
+                    {signInCheckResult?.signedIn
+                      ? signInCheckResult.user.displayName
+                      : ""}
+                  </Text>
+                  <Text
+                    display={signInCheckResult?.signedIn ? "block" : "none"}
+                    fontSize={FontSizeXS}
+                    pl={2}
+                  >
+                    {signInCheckResult?.signedIn
+                      ? signInCheckResult.user.email
+                      : ""}
+                  </Text>
+                </Box>
+              </Box>
             </Box>
             <Box
               style={{
@@ -248,10 +380,10 @@ const Navbar = ({ lang, dictionary }: { lang: Locale; dictionary: any }) => {
                 setOpenDrawer(!openDrawer);
               }}
             >
-              <Box pr={2}>
+              {/* <Box pr={2}>
                 <IoIosNotificationsOutline size={30} />
-              </Box>
-              <Box>
+              </Box> */}
+              <Box mr={4}>
                 {openDrawer ? (
                   <CloseIcon w={7} h={7} />
                 ) : (
@@ -267,7 +399,7 @@ const Navbar = ({ lang, dictionary }: { lang: Locale; dictionary: any }) => {
       <SearchModal
         openSearchModal={openSearchModal}
         setOpenSearchModal={setOpenSearchModal}
-      ></SearchModal>
+      />
       <MenuModal
         setOpen={setOpenDrawer}
         isOpen={openDrawer}
@@ -349,8 +481,6 @@ export const NavItemMenuMobile = () => {
     </Box>
   );
 };
-
-export default Navbar;
 
 const SearchModal = ({
   openSearchModal,
@@ -611,3 +741,5 @@ const SelectCountryModal = ({
     </Modal>
   );
 };
+
+export default Navbar;

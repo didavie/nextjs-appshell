@@ -25,7 +25,7 @@ import useAppRouter from "@/hooks/useAppRouter";
 import { useAuth, useFirestore, useSigninCheck } from "reactfire";
 import { Dictionary } from "get-dictionary";
 import { Locale } from "i18n-config";
-import { userApi } from "@/components/api/user";
+import { userApi } from "@/components/api/v1/user";
 import { User } from "next-auth";
 import { SerializedError } from "@reduxjs/toolkit";
 import { FetchBaseQueryError } from "@reduxjs/toolkit/query";

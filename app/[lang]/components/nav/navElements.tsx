@@ -1,24 +1,18 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import {
-  IconBrandWhatsapp,
-  IconBuildingStore,
-  IconCheck,
-  IconChevronDown,
-  IconChevronUp,
-  IconLogin,
-  IconLogout,
-  IconShoppingBag,
-  IconSquarePlus,
-  IconUser,
-  IconUserPlus,
-} from "@tabler/icons-react";
+import { IconBrandWhatsapp } from "@tabler/icons-react";
 import { IconBrandFacebook } from "@tabler/icons-react";
 import { IconBrandInstagram } from "@tabler/icons-react";
 import { IconMapPin } from "@tabler/icons-react";
 import { useMediaQuery } from "@mantine/hooks";
-import { Dialog, Divider, ScrollArea, useMantineTheme } from "@mantine/core";
+import {
+  Dialog,
+  Divider,
+  Drawer,
+  Select,
+  useMantineTheme,
+} from "@mantine/core";
 import { usePrevious } from "@mantine/hooks";
 import { useWindowScroll } from "@mantine/hooks";
 import { defaultColor } from "config/colors";
@@ -45,18 +39,9 @@ const FcRight = dynamic(
   }
 );
 
-import { Avatar, Button, DrawerCloseButton, Select } from "@chakra-ui/react";
+import { Avatar, Button } from "@chakra-ui/react";
 
-import {
-  Drawer,
-  DrawerBody,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerOverlay,
-  DrawerContent,
-  Text,
-  Box,
-} from "@chakra-ui/react";
+import { Text, Box } from "@chakra-ui/react";
 
 import { useAuth, useFirestore, useSigninCheck } from "reactfire";
 import { ParsedToken } from "firebase/auth";
@@ -73,158 +58,9 @@ import {
   FontSizeXXXL,
 } from "@/config/styling";
 import { FaBlog } from "react-icons/fa6";
-
-const NavElementsInNav = () => {
-  const isMobile = useMediaQuery("(max-width: 768px)");
-  const [currentPathLang, setCurrentPathLang] = useState("en");
-  const [currentCurrency, setCurrentCurrency] = useState("xof");
-  const router = useAppRouter();
-  const paths = usePathname();
-  useEffect(() => {
-    const pathComponents = paths.split("/").slice(1);
-    setCurrentPathLang(pathComponents[0]);
-  }, [paths]);
-
-  return (
-    <Box>
-      {/* {!isMobile && ( */}
-      <Box
-        id="navbarNav"
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
-      >
-        <Link href="https://wa.me/message/GX45TNBNXJLIF1">
-          <IconBrandWhatsapp
-            style={{
-              marginRight: 4,
-            }}
-            size={20}
-            color="#25D366"
-          />
-        </Link>
-        <Link href="https://www.facebook.com/profile.php?id=100083554441026&mibextid=ZbWKwL">
-          <IconBrandFacebook
-            style={{
-              marginRight: 4,
-            }}
-            size={20}
-            color="#4267B2"
-          />
-        </Link>
-        <Link href="https://instagram.com/cami_market1?igshid=OGQ5ZDc2ODk2ZA==">
-          <IconBrandInstagram
-            style={{
-              marginRight: 4,
-            }}
-            size={20}
-            color={"#e420fa"}
-          />
-        </Link>
-        <Link href="https://maps.app.goo.gl/9PDBL96sUxm6FX2z5">
-          <IconMapPin size={20} color={"#e420fa"} />
-        </Link>
-      </Box>
-    </Box>
-  );
-};
-
-const NavElementsOutsideNav = () => {
-  const isMobile = useMediaQuery("(max-width: 768px)");
-
-  const [opened, setOpened] = useState(true);
-  const [isScrol, setIsScrol] = useState(true);
-
-  const [scroll, scrollTo] = useWindowScroll();
-  const prevY = usePrevious(scroll.y);
-
-  useEffect(() => {
-    if (prevY !== undefined) {
-      if (scroll.y > prevY) {
-        setIsScrol(true);
-      } else {
-        setIsScrol(false);
-      }
-    }
-  }, [scroll.y, prevY]);
-
-  useEffect(() => {
-    if (isMobile) {
-      setOpened(true);
-    } else {
-      setOpened(false);
-    }
-  }, [isMobile]);
-  return (
-    <>
-      {isMobile && (
-        <Dialog
-          opened={opened}
-          title="CM"
-          position={{ bottom: "80px" }}
-          style={{
-            position: "fixed",
-            zIndex: 100,
-            right: "10px",
-            flexDirection: "row",
-            justifyContent: "center",
-            alignItems: "center",
-            display: "flex",
-            borderRadius: 10,
-            boxShadow: "0px 0px 5px 0px rgba(0,0,0,0.3)",
-          }}
-        >
-          <Link href="https://wa.me/message/GX45TNBNXJLIF1">
-            <IconBrandWhatsapp
-              style={{
-                marginRight: 15,
-                marginLeft: 15,
-              }}
-              size={30}
-              color="#25D366"
-            />
-          </Link>
-          <Link href="https://www.facebook.com/profile.php?id=100083554441026&mibextid=ZbWKwL">
-            <IconBrandFacebook
-              style={{
-                marginRight: 15,
-                marginLeft: 15,
-              }}
-              size={30}
-              color="#4267B2"
-            />
-          </Link>
-          <Link href="https://instagram.com/cami_market1?igshid=OGQ5ZDc2ODk2ZA==">
-            <IconBrandInstagram
-              style={{
-                marginRight: 15,
-                marginTop: 15,
-                marginBottom: 15,
-                marginLeft: 15,
-              }}
-              size={30}
-              color={"#e420fa"}
-            />
-          </Link>
-          {/* <Link href="https://map.google.com/maps?q=6.387629985809326,2.3354876041412354">
-            <IconMapPin
-              style={{
-                marginRight: 15,
-                marginTop: 15,
-                marginBottom: 15,
-                marginLeft: 15,
-              }}
-              size={30}
-              color={"#e420fa"}
-            />
-          </Link> */}
-        </Dialog>
-      )}
-    </>
-  );
-};
+import { SupportedLanguages } from "@/config/constants";
+import { setCurrentLanguage } from "@/redux/actions/users";
+import { FcCalendar } from "react-icons/fc";
 
 export const MenuModal = ({
   isOpen,
@@ -250,7 +86,10 @@ export const MenuModal = ({
   const dispatch = useAppDispatch();
   const auth = useAuth();
   const [currentPathLang, setCurrentPathLang] = useState("en");
-
+  const selectOptions = SupportedLanguages.map((lang) => ({
+    value: lang.code,
+    label: lang.nativeName,
+  }));
   useEffect(() => {
     if (status !== "success" || !signInCheckResult?.signedIn) {
       return;
@@ -270,11 +109,15 @@ export const MenuModal = ({
   }, [paths]);
 
   return (
-    <Drawer isOpen={isOpen} placement="right" onClose={() => setOpen(false)}>
-      <DrawerOverlay />
-      <DrawerContent>
-        {/* <DrawerCloseButton /> */}
-        <DrawerHeader>
+    <Drawer.Root
+      opened={isOpen}
+      onClose={() => setOpen(false)}
+      size={"80%"}
+      position="right"
+    >
+      <Drawer.Overlay />
+      <Drawer.Content>
+        <Drawer.Header>
           <Box
             style={{
               display: "flex",
@@ -304,11 +147,11 @@ export const MenuModal = ({
                 backgroundColor={defaultColor}
                 maxW={"200px"}
                 display={signInCheckResult?.signedIn ? "none" : "block"}
-                fontSize={FontSizeXS}
+                fontSize={FontSizeMD}
                 m={2}
                 mt={0}
               >
-                Create Account
+                {dictionary.register}
               </Button>
               <Button
                 onClick={() => {
@@ -320,10 +163,10 @@ export const MenuModal = ({
                 maxW={"200px"}
                 display={signInCheckResult?.signedIn ? "none" : "block"}
                 m={2}
-                fontSize={FontSizeXS}
+                fontSize={FontSizeMD}
                 mt={0}
               >
-                Sign In
+                {dictionary.login}
               </Button>
             </Box>
 
@@ -386,15 +229,16 @@ export const MenuModal = ({
               </Box>
             </Box>
           </Box>
-        </DrawerHeader>
-        <Divider w={"100vw"} m="auto" h={2} />
+        </Drawer.Header>
+        <Divider w={"100%"} m="auto" h={2} />
 
-        <DrawerBody>
+        <Drawer.Body>
           <Box
             style={{
               display: "flex",
               justifyContent: "flex-start",
               alignItems: "left",
+              flexDirection: "column",
             }}
             w={"100%"}
             marginBottom={5}
@@ -410,20 +254,49 @@ export const MenuModal = ({
               }}
             >
               <FcHome size={30} />
-              <Link href={`/${currentPathLang}`}>
-                <Text
-                  style={{
-                    marginLeft: 10,
-                    cursor: "pointer",
-                  }}
-                  fontSize={FontSizeXL}
-                >
-                  Home
-                </Text>
-              </Link>
+
+              <Text
+                style={{
+                  marginLeft: 10,
+                  cursor: "pointer",
+                }}
+                fontSize={FontSizeXL}
+                onClick={() => {
+                  setOpen(false);
+                  router.push(`/${currentPathLang}`);
+                }}
+              >
+                {dictionary.home}
+              </Text>
+            </Box>
+            <Box
+              style={{
+                display: "flex",
+              }}
+              w={"100%"}
+              marginBottom={5}
+              onClick={() => {
+                setOpen(false);
+              }}
+            >
+              <FcCalendar size={30} />
+
+              <Text
+                style={{
+                  marginLeft: 10,
+                  cursor: "pointer",
+                }}
+                fontSize={FontSizeXL}
+                onClick={() => {
+                  setOpen(false);
+                  router.push(`/${currentPathLang}`);
+                }}
+              >
+                {dictionary.events}
+              </Text>
             </Box>
           </Box>
-          <Divider w={"100vw"} m="auto" h={2} />
+          <Divider w={"100%"} m="auto" h={2} />
           <Box
             style={{
               display: signInCheckResult?.signedIn ? "flex" : "none",
@@ -437,17 +310,19 @@ export const MenuModal = ({
             }}
           >
             <FcAddColumn size={30} />
-            <Link href={`/${currentPathLang}/post/create`}>
-              <Text
-                style={{
-                  marginLeft: 10,
-                  cursor: "pointer",
-                }}
-                fontSize={FontSizeXL}
-              >
-                Create Post
-              </Text>
-            </Link>
+            <Text
+              style={{
+                marginLeft: 10,
+                cursor: "pointer",
+              }}
+              fontSize={FontSizeXL}
+              onClick={() => {
+                setOpen(false);
+                router.push(`/${currentPathLang}/post/create`);
+              }}
+            >
+              {dictionary.createPost}
+            </Text>
           </Box>
           <Box
             style={{
@@ -478,15 +353,50 @@ export const MenuModal = ({
                 }}
                 fontSize={FontSizeXL}
               >
-                Sign Out
+                {dictionary.logout}
               </Text>
             </Link>
           </Box>
-        </DrawerBody>
 
-        <DrawerFooter></DrawerFooter>
-      </DrawerContent>
-    </Drawer>
+          <Box
+            mb={5}
+            w={"100%"}
+            position="absolute"
+            bottom={0}
+            left={3}
+            right={0}
+            marginBottom={5}
+          >
+            <Select
+              data={selectOptions}
+              value={selectOptions.find((o) => o.value === lang)?.value}
+              onChange={(_value, option) => {
+                if (option.value === currentPathLang) {
+                  return;
+                }
+                if (
+                  option.value &&
+                  (option.value !== "" || option.value !== undefined)
+                ) {
+                  const newPath = paths.replace(
+                    `/${currentPathLang}`,
+                    `/${option.value}`
+                  );
+                  dispatch(setCurrentLanguage(option.value));
+                  router.push(newPath);
+                }
+              }}
+              placeholder="Select language"
+              style={{
+                width: "100px",
+                color: "black",
+                backgroundColor: "#f8f9fa",
+              }}
+            />
+          </Box>
+        </Drawer.Body>
+      </Drawer.Content>
+    </Drawer.Root>
   );
 };
 
@@ -529,4 +439,3 @@ export const BoxMenuElement = ({
     </Box>
   );
 };
-export { NavElementsInNav, NavElementsOutsideNav };

@@ -61,12 +61,11 @@ export const base = createApi({
    */
   refetchOnMountOrArgChange: 30,
 
-  tagTypes: ["Transaction, User"],
+  tagTypes: ["User", "Post"],
   /**
    * This api has endpoints injected in adjacent files,
    * which is why no endpoints are shown below.
    */
-
   //
   // Define any custom hooks that use the baseQuery and
   // need to be used outside of a React component

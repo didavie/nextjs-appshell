@@ -10,10 +10,22 @@ const useAppRouter = () => {
   const router = useRouter();
   const isMobileAtBreak = useMediaQuery(`${MaxMobileWidth}px`);
   const isMobileDevice = isMobile;
+  // get ful url
 
   //   define a new class for the router with push method to be used in the app
   class AppRouter {
     push = (url: string) => {
+      const urlL = window.location.href;
+      const urlSplit = urlL.split("/").slice(2);
+      const company = urlSplit[0].split(".")[0] || "ahi";
+      let options = `?ssr=${company}`;
+      if (url.includes("?")) {
+        options = `&ssr=${company}`;
+      }
+      // if url already has ssr set it to empty
+      if (url.includes("ssr")) {
+        options = "";
+      }
       if (isMobileDevice || isMobileAtBreak) {
         if (url.includes("/desktop")) {
           //   replace /desktop with mobile without split
@@ -64,8 +76,9 @@ const useAppRouterHook = (url: string) => {
   const isMobileAtBreak = useMediaQuery(`${MaxMobileWidth}px`);
   const isMobileDevice = isMobile;
 
+  // get ful url
+
   useEffect(() => {
-    console.log("useAppRouterHook", url);
     if (isMobileDevice || isMobileAtBreak) {
       if (url.includes("/desktop")) {
         //   replace /desktop with mobile without split

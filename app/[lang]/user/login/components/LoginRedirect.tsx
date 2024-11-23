@@ -1,4 +1,4 @@
-import { userApi } from "@/components/api/user";
+import { userApi } from "@/components/api/v1/user";
 import AhiLoading from "@/components/loading";
 import { useAppDispatch } from "@/hooks/useAppDispatch";
 import { UserCollectionRef } from "@/models/models";

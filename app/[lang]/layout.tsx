@@ -92,11 +92,18 @@ export default async function Root({
                 flexDirection="column"
                 justifyContent="flex-start"
                 alignItems="center"
-                backgroundColor="gray.200"
                 marginTop={"55px"}
+                backgroundColor="white"
+                borderLeft="solid"
+                borderRight="solid"
+                borderColor="gray.400"
+                borderLeftWidth="1px"
+                borderRightWidth="1px"
               >
                 <Navbar lang={params.lang} dictionary={dictionary} />
-                <Top lang={params.lang}>{children}</Top>
+                <Top lang={params.lang} dictionary={dictionary}>
+                  {children}
+                </Top>
               </Box>
             </Suspense>
           </FirebaseConfig>
